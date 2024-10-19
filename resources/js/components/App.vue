@@ -14,12 +14,4 @@ export default {
 <template>
     <navbar-component></navbar-component>
     <router-view></router-view>
-<!--    <router-view v-slot="{ Component, route }">-->
-<!--        <div :key="route.name">-->
-<!--            <Component :is="Component" />-->
-<!--        </div>-->
-<!--        <div :key="route.name">-->
-
-<!--        </div>-->
-<!--    </router-view>-->
 </template>

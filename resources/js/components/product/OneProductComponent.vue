@@ -4,7 +4,6 @@ export default {
     name: "OneProductComponent",
     data() {
         return {
-            //id: $route.params.id
             product: {},
         }
     },
