@@ -28,19 +28,11 @@ class ProductSeeder extends Seeder
             ->create()
             ->each(function (Product $product) {
                 $images = ProductImage::factory()->count(3)->make();
-
                 $product->images()->saveMany($images);
+
+                $price = ProductPrice::factory()->count(1)->make();
+                $product->price()->saveMany($price);
             });
 
-//        // Create 10 records of customers
-//        factory(Product::class, 10)->create()->each(function ($customer) {
-//            // Seed the relation with one address
-//            $address = factory(App\CustomerAddress::class)->make();
-//            $customer->address()->save($address);
-//
-//            // Seed the relation with 5 purchases
-//            $purchases = factory(App\CustomerPurchase::class, 5)->make();
-//            $customer->purchases()->saveMany($purchases);
-//        });
     }
 }

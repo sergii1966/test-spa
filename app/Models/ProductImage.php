@@ -11,11 +11,17 @@ class ProductImage extends Model
     use HasFactory;
 
     protected $fillable = [
+        'id',
         'product_id',
-        'src',
-        'path',
-        'is_main',
-        'is_active'
+        'path_sm',
+        'path_lg',
+        'url_sm',
+        'url_lg',
+        'width_sm',
+        'width_lg',
+        'height_sm',
+        'height_lg',
+        'status'
     ];
 
     public function product(): belongsTo

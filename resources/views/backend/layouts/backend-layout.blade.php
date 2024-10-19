@@ -10,8 +10,6 @@
     @vite(['resources/js/app.js'])
 </head>
 <body>
-    <div class="">
         @yield('content')
-    </div>
 </body>
 </html>

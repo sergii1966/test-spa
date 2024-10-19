@@ -13,7 +13,7 @@ export default {
         'node_modules/flowbite/**/*.{js,jsx,ts,tsx}'
     ],
     plugins: [
-       require('flowbite/plugin')
+       require('flowbite/plugin'),
     ],
     theme: {
         extend: {},

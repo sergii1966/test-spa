@@ -25,10 +25,15 @@ class ProductImageFactory extends Factory
 //            'product_id' => function () {
 //                return Product::factory()->create()->id;
 //            },
-            'src' => $this->faker->imageUrl(500, 500),
-            'path' => null,
-            'is_main' => true,
-            'is_active' => true,
+            'url_sm' => $this->faker->imageUrl(380, 380),
+            'path_sm' => $this->faker->text(5),
+            'width_sm' => 380,
+            'height_sm' => 380,
+            'url_lg' => $this->faker->imageUrl(627, 627),
+            'path_lg' => $this->faker->text(5),
+            'width_lg' => 627,
+            'height_lg' => 627,
+             'status' => 1,
         ];
     }
 }

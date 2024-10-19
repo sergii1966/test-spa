@@ -21,11 +21,11 @@ class ProductPriceFactory extends Factory
     {
         return [
 //            'product_id' => Product::factory(),
-            'product_id' => function () {
-                return Product::factory()->create()->id;
-            },
+//            'product_id' => function () {
+//                return Product::factory()->create()->id;
+//            },
             'price_old' => $this->faker->randomFloat(0, 100, 200),
-            'price_new' => $this->faker->randomFloat(0, 201, 300),
+            'price_new' => $this->faker->randomFloat(0, 50, 99),
             //fake()->randomFloat(10000, 10),
         ];
     }

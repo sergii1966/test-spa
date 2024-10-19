@@ -18,10 +18,15 @@ return new class extends Migration
                 ->constrained()
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
-            $table->string('src')->nullable(false);
-            $table->string('path')->nullable();
-            $table->boolean('is_main')->default(false);
-            $table->boolean('is_active')->default(true);
+            $table->string('path_sm', 200)->nullable(false);
+            $table->string('path_lg', 200)->nullable(false);
+            $table->string('url_sm', 200)->nullable(false);
+            $table->string('url_lg', 200)->nullable(false);
+            $table->string('width_sm', 20)->nullable(false);
+            $table->string('width_lg', 20)->nullable(false);
+            $table->string('height_sm', 20)->nullable(false);
+            $table->string('height_lg', 20)->nullable(false);
+            $table->integer('status')->default(1)->nullable();
             $table->timestamps();
         });
     }
